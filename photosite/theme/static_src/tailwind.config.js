@@ -6,6 +6,7 @@
  */
 
 module.exports = {
+    mode: 'jit',
     content: [
         /**
          * HTML. Paths to Django template files that will contain Tailwind CSS classes.
@@ -19,6 +20,8 @@ module.exports = {
          * Adjust the following line to match your project structure.
          */
         '../../templates/**/*.html',
+        "../templates/**/*.{html,js}",
+        '../../templates/**.html',
 
         /*
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).
