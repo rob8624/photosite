@@ -1,65 +1,63 @@
 {% load tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+  <head>
     <title>Robert Melen Photographer</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		{% tailwind_css %}
-	</head>
-
-	<body>
-		<div id="base" class="grid grid-col-1 sm:grid-cols-3">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% tailwind_css %}
+  </head>
+  <body class="relative">
+    <div class="grid sm:grid-cols-3">
     
+      
+      <header class="flex flex-col sm:min-h-screen w-full sm:w-2/6 justify-center sm:items-center gap-6 bg-gradient-to-r sm:fixed ">
+        
+        <h1 class="sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl -mb-6 border border-transparent border-b-rose-500 border-gray-400 pb-1">Robert Melen</h1>
+        <span class="sm:text-center">Photography and Web development</span>
+        
+          <ul class=" flex flex-wrap list-none sm:justify-center gap-2">
+          <li><a class="hover:text-red-500" href="">Galleries</a></li>
+          <li><a class="hover:text-red-500" href="">Contact</a></li>
+          <li><a class="hover:text-red-500" href="">About</a></li>
+          </ul>
+        
+        <span class="sm:absolute bottom-10">copyright robert melen 2023</span>
+        
+        
+      </header>
     
-			<div id="side-col" class="flex bg-zinc-100 sm:col-span-1 flex-grow shadow-lg items-center justify-center">
-			  
-			 
-			  <nav class="flex sm:flex-col">
-				
-			   
-				<h1 class="sm:text-4xl ml-2 sm:mt-0" >Robert Melen</h1>
-				<h1 class="sm: ml-2 text-red-500">Photographer//Web Developer</h1>
-				<h1 class="sm: ml-2 text-xs">Swansea/Wales</h1>
-				<hr class="h-1 my-3 bg-gray-900 border-0 dark:bg-gray-700">
-				<div class="hidden sm:grid grid-cols-4 gap-2">
-					<div class="mr-4">Galleries</div>
-					<div class="ml-2">About</div>
-          <div class="ml-2">Blog</div>
-					<div>Contact</div>
-				</div>
-				
-		
-			  
-			  </nav>
-			</div>
-			<div class="sm:col-span-2 bg-zinc-200">
-			  <div class="flex flex-row justify-center">
-			  <h1 class="text-xs">Welcome to my website, powered by Django, HTMX and Tailwind: <a href="#" class="hover:text-sky-900">Learn more</a></h1>
-			  </div>
-		
-			  
-		
-			  <hr class="h-1 my-1 bg-gray-200 border-0 dark:bg-sky-900">
-			  <div class="sm:hidden flex flex-row justify-center text-xs gap-4 sm:text-lg sm:justify-center sm:gap-6">
-				  <hr class="h-1 ">
-					<div>Images</div>
-					 	<div>Galleries</div>
-							<div>About</div>
-					    <div>Contact</div>
-					<div>Blog</div>
-			  </div>
-					<div class="grid sm:grid-flow-row sm:place-items-center gap-2 p-6 sm:h-screen sm:overflow-y-scroll">
-						<div class="sm:hover:scale-90 duration-75"><img src="https://photosite-static.s3.amazonaws.com/media/CACHE/images/media/Rmelen_200521_Riot_Swansea_003_2/5b3a0103f4d59bd45ffdf8f0fcc67ac7.jpg"></div>
-
-
-						<div class="sm:hover:scale-90 duration-75"><img src="https://photosite-static.s3.amazonaws.com/media/CACHE/images/media/RM_230219_WalesEngland_Fans_025/8cb0fba856e03bbbdf1923cfbb03ca90.jpg"></div>
-
-						<div class="sm:hover:scale-90 duration-75"><img src="https://media.istockphoto.com/id/1072048902/photo/side-view-of-male-ski-jumper-in-mid-air-during-snowstorm.jpg?s=2048x2048&w=is&k=20&c=lULE9GF_FXROY3VBBFQ8Red_CLaYk3CL7mj1WQTRNWQ="></div>
-					</div>
-			</div>
-		</div>  
-	</div>
-</body>
-</html>
+        
+    
+      <section class="grid min-w-fit md:grid-cols-1  lg:grid-cols-2 sm:col-start-2 sm:col-span-2  sm:gap-2 sm:overflow-y-scroll scrollbar-hide mt-2">
+        <div>
+          <img class="w-full" src="https://photosite-static.s3.amazonaws.com/media/CACHE/images/media/LNP_Sunrise_PenyFan_RME_008/a5ab44c1179cd15f9dfd1c81a5841963.JPG">
+          <div class=" text-xs">Sunrise at Penyfan, South Wales</div>
+        </div>
+         <div>
+          <img class="w-full" src="https://photosite-static.s3.amazonaws.com/media/CACHE/images/media/RM_021222_Wales_Fog_014/b878156f2c482f3151979e30b032d1d1.JPG">
+          <div class=" text-xs">Mist rises over the village of Pontardawe</div>
+        </div>
+        
+         <div>
+          <img class="w-full" src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-260nw-1842198919.jpg">
+            
+        </div>
+         <div class="">
+          <img src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-260nw-1842198919.jpg">
+        </div>
+         <div class="">
+          <img src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-260nw-1842198919.jpg">
+        </div>
+          <div class="">
+          <img src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-260nw-1842198919.jpg">
+        </div>
+         <div class="">
+          <img src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-260nw-1842198919.jpg">
+        </div>
+      </section>
+      >
+    </div>
+    </body>
+    
