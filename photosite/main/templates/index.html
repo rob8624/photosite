@@ -18,44 +18,28 @@
         <span class="sm:text-center">Photography and Web development</span>
         
           <ul class=" flex flex-wrap list-none sm:justify-center gap-2">
-          <li><a class="hover:text-red-500" href="">Galleries</a></li>
+          <li><a class="hover:text-red-500 focus:ring-1 ring-offset-4 ring-gray-900 rounded-lg shadow-sm" href="">Galleries</a></li>
           <li><a class="hover:text-red-500" href="">Contact</a></li>
           <li><a class="hover:text-red-500" href="">About</a></li>
           </ul>
         
         <span class="sm:absolute bottom-10">copyright robert melen 2023</span>
-        
+          <span class="sm:absolute left-0 bottom-0">sign in</span>
         
       </header>
     
         
     
-      <section class="grid min-w-fit md:grid-cols-1  lg:grid-cols-2 sm:col-start-2 sm:col-span-2  sm:gap-2 sm:overflow-y-scroll scrollbar-hide mt-2">
+      <section class="grid min-w-fit md:grid-cols-1  lg:grid-cols-2 sm:col-start-2 sm:col-span-2  sm:gap-2 sm:overflow-y-scroll scrollbar-hide mt-2 shadow-xl items-center">
+        {% for image in images %}
         <div>
-          <img class="w-full" src="https://photosite-static.s3.amazonaws.com/media/CACHE/images/media/LNP_Sunrise_PenyFan_RME_008/a5ab44c1179cd15f9dfd1c81a5841963.JPG">
+          
+          <img class="w-full" src="{{ image.image.url }}">
           <div class=" text-xs">Sunrise at Penyfan, South Wales</div>
+          
         </div>
-         <div>
-          <img class="w-full" src="https://photosite-static.s3.amazonaws.com/media/CACHE/images/media/RM_021222_Wales_Fog_014/b878156f2c482f3151979e30b032d1d1.JPG">
-          <div class=" text-xs">Mist rises over the village of Pontardawe</div>
-        </div>
-        
-         <div>
-          <img class="w-full" src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-260nw-1842198919.jpg">
-            
-        </div>
-         <div class="">
-          <img src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-260nw-1842198919.jpg">
-        </div>
-         <div class="">
-          <img src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-260nw-1842198919.jpg">
-        </div>
-          <div class="">
-          <img src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-260nw-1842198919.jpg">
-        </div>
-         <div class="">
-          <img src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-260nw-1842198919.jpg">
-        </div>
+        {% endfor %}
+         
       </section>
       >
     </div>
