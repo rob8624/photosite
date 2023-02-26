@@ -32,12 +32,16 @@
     
       <section class="grid min-w-fit md:grid-cols-1  lg:grid-cols-2 sm:col-start-2 sm:col-span-2  sm:gap-2 sm:overflow-y-scroll scrollbar-hide mt-2 shadow-xl items-center">
         {% for image in images %}
-        <div>
+        <div class="flex flex-col">
           
-          <img class="w-full" src="{{ image.image.url }}">
-          <div class=" text-xs">Sunrise at Penyfan, South Wales</div>
+          <img class="" src="{{ image.image.url }}">
+
+        
+          <div class="relative bot text-xs pt-4">Sunrise at Penyfan, South Wales</div>
+
+          </div>
           
-        </div>
+       
         {% endfor %}
          
       </section>

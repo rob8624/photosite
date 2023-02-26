@@ -717,6 +717,10 @@ select {
   position: static;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -731,6 +735,10 @@ select {
 
 .left-0 {
   left: 0px;
+}
+
+.bottom-12 {
+  bottom: 3rem;
 }
 
 .mx-auto {
@@ -758,23 +766,46 @@ select {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
+.w-3 {
+  width: 0.75rem;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-32 {
+  width: 8rem;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .list-none {
@@ -789,10 +820,6 @@ select {
   flex-wrap: wrap;
 }
 
-.place-items-center {
-  place-items: center;
-}
-
 .items-center {
   align-items: center;
 }
@@ -803,6 +830,10 @@ select {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-2 {
@@ -844,8 +875,22 @@ select {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .font-serif {
