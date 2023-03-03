@@ -22,12 +22,7 @@ class Image(models.Model):
             try:
                 info = im.getexif()[0x010e]
                 self.caption = info
-                print(self.caption)
-
-            
-                
                 super(Image, self).save(*args, **kwargs)
-            
             except KeyError:
                 pass
             super(Image, self).save(*args, **kwargs)
